@@ -26,12 +26,12 @@ export default function HandleLogin(email,pass)
         const userData = database.find((user) => user.username === email||user.phone === email);
 
         if (userData) 
-
+        {
           if (userData.password===pass) 
 
             // console.log('true');
             setMessage('successful')
-         
+        }
 
         else {
             // console.log('false');
